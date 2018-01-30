@@ -237,7 +237,7 @@ open class APNGImageView: APNGView {
         timer = nil
     }
     
-    func tick() {
+    open func tick() {
         guard let image = image else {
             return
         }
