@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02503630A8CB171AD464A43D5401E9AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */; };
+		04DD22364719E4C65304DC239550A708 /* Pods-APNGKit-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F289703F906754FC8061BEFF88CB5B /* Pods-APNGKit-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19832C60DA1F918DF490B4DD7F7A18A4 /* GCDTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F9D41D871C948A6A27C03B27615A23 /* GCDTimer-dummy.m */; };
+		3F3B48B9120CF48DA35FF616152B9A1B /* GCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5575DFC6C32161C3A424C068E3837C6B /* GCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458C302C722D12298C6B9492650E1C48 /* Pods-APNGKit-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4310463A072E6432236FAED05A602648 /* Pods-APNGKit-iOS-dummy.m */; };
+		740436ECC1FE7AB1E91AE4D628EB1306 /* GCDTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 104D0845262D569AD91B7DA1121CE54E /* GCDTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7D6615DBF22A258282B5626E9D71907 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
+		ACD61B55620160EE9405DCC0C0AA4D7D /* Pods-APNGKit-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0480D5B9A81264836E2B301AD354E692 /* Pods-APNGKit-macOS-dummy.m */; };
+		BEE8C3A6007154E47B46031C3B316C7B /* Pods-APNGKit-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D704343D7C516539DB0A759A2E83C532 /* Pods-APNGKit-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E677D3D1FF92425E91208C9E15D6ACA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */; };
+		F53FD32F5D38BCBC869C7522EC7E60F7 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A3D779B6EC0FD7E87CEA8FAD00F98B /* GCDTimer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7904572522A1C3A6CB061C44F5C1BAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C899FF806C0FB417360FE0E161170A87;
+			remoteInfo = GCDTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023362636EE9FE2CB8F29D8E8641B938 /* Pods-APNGKit-macOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APNGKit-macOS-resources.sh"; sourceTree = "<group>"; };
+		0480D5B9A81264836E2B301AD354E692 /* Pods-APNGKit-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APNGKit-macOS-dummy.m"; sourceTree = "<group>"; };
+		104D0845262D569AD91B7DA1121CE54E /* GCDTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDTimer-umbrella.h"; sourceTree = "<group>"; };
+		17F9D41D871C948A6A27C03B27615A23 /* GCDTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDTimer-dummy.m"; sourceTree = "<group>"; };
+		1BFAE624B5CEE8C9FA9D1F3BCAFED383 /* Pods-APNGKit-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APNGKit-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		293B1A89BDFAD30765D8EE5D5D7F0898 /* Pods-APNGKit-macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APNGKit-macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A4FD61F0F615758EC59D9ADE6E7E3C9 /* Pods-APNGKit-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APNGKit-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C01E6BA005ACDBE32FFB870721B4C20 /* Pods-APNGKit-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APNGKit-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		32A3D779B6EC0FD7E87CEA8FAD00F98B /* GCDTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDTimer.m; path = Source/GCDTimer.m; sourceTree = "<group>"; };
+		4310463A072E6432236FAED05A602648 /* Pods-APNGKit-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APNGKit-iOS-dummy.m"; sourceTree = "<group>"; };
+		4CBDBA66319F8406FCAE875F5F45E075 /* Pods-APNGKit-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APNGKit-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD95B18AE37C38014FBBC45F79D4D51 /* Pods-APNGKit-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-APNGKit-iOS.modulemap"; sourceTree = "<group>"; };
+		534A53368E66994F757FA49C3600495C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5575DFC6C32161C3A424C068E3837C6B /* GCDTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDTimer.h; path = Source/GCDTimer.h; sourceTree = "<group>"; };
+		675DBFE82397ECC71B73916288B12836 /* GCDTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GCDTimer.modulemap; sourceTree = "<group>"; };
+		697AC01E8813E6C06FE098FFEF309331 /* Pods-APNGKit-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-APNGKit-macOS.modulemap"; sourceTree = "<group>"; };
+		6A5EA0F761D1910F6536D56EA73F1F53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E4420D35DDCB3B900B0257AA52AF78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73321509A8A22D3CC52280F5CE8028C6 /* Pods_APNGKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNGKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8168431A9A52E365352A35B4D809E690 /* Pods-APNGKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APNGKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8CF9AA35E57B49EA3FBB74029757571B /* Pods-APNGKit-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APNGKit-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90F289703F906754FC8061BEFF88CB5B /* Pods-APNGKit-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APNGKit-macOS-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A967C7DC9DCF6746546B194C2D59418B /* Pods-APNGKit-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APNGKit-iOS-resources.sh"; sourceTree = "<group>"; };
+		B846E80028506DA3DFFEF3ACA424F048 /* Pods-APNGKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APNGKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BE4CB79A9CFA2F369AD75B900EDE6EBE /* GCDTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDTimer-prefix.pch"; sourceTree = "<group>"; };
+		CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		D704343D7C516539DB0A759A2E83C532 /* Pods-APNGKit-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-APNGKit-iOS-umbrella.h"; sourceTree = "<group>"; };
+		DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E0707CE97F11141902FBF266DCC824ED /* Pods_APNGKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNGKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60BCA06BC8C9FBB4645328726777783 /* GCDTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDTimer.xcconfig; sourceTree = "<group>"; };
+		FC56B043D4AC368B93D21935FCBD1542 /* GCDTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04551F0BA5924682CA44A25BAE1188C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D6615DBF22A258282B5626E9D71907 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740AD5D1E1929DB66F9BC8BC3AD741CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02503630A8CB171AD464A43D5401E9AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8946A55C7DC234D94E0A8DB5D8ADED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E677D3D1FF92425E91208C9E15D6ACA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129A64696900CC880CAAB19336EAA0D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				675DBFE82397ECC71B73916288B12836 /* GCDTimer.modulemap */,
+				E60BCA06BC8C9FBB4645328726777783 /* GCDTimer.xcconfig */,
+				17F9D41D871C948A6A27C03B27615A23 /* GCDTimer-dummy.m */,
+				BE4CB79A9CFA2F369AD75B900EDE6EBE /* GCDTimer-prefix.pch */,
+				104D0845262D569AD91B7DA1121CE54E /* GCDTimer-umbrella.h */,
+				534A53368E66994F757FA49C3600495C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDTimer";
+			sourceTree = "<group>";
+		};
+		2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				CDDAA23DDA8E082FC77E38FA01601C8F /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C918DD0468B798DBE7EEDD4C9D4170B /* iOS */,
+				2EDFAB15A7E74F864EB353FCB5A57006 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6383EA6A758D8EDBAA43F657DBB0DC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A67FE0842A0DDA904DCA7095D5AD57D3 /* GCDTimer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D73B3CA80CF1E2C14CCCAB309898342 /* Pods-APNGKit-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				6A5EA0F761D1910F6536D56EA73F1F53 /* Info.plist */,
+				697AC01E8813E6C06FE098FFEF309331 /* Pods-APNGKit-macOS.modulemap */,
+				2A4FD61F0F615758EC59D9ADE6E7E3C9 /* Pods-APNGKit-macOS-acknowledgements.markdown */,
+				293B1A89BDFAD30765D8EE5D5D7F0898 /* Pods-APNGKit-macOS-acknowledgements.plist */,
+				0480D5B9A81264836E2B301AD354E692 /* Pods-APNGKit-macOS-dummy.m */,
+				023362636EE9FE2CB8F29D8E8641B938 /* Pods-APNGKit-macOS-resources.sh */,
+				90F289703F906754FC8061BEFF88CB5B /* Pods-APNGKit-macOS-umbrella.h */,
+				4CBDBA66319F8406FCAE875F5F45E075 /* Pods-APNGKit-macOS.debug.xcconfig */,
+				1BFAE624B5CEE8C9FA9D1F3BCAFED383 /* Pods-APNGKit-macOS.release.xcconfig */,
+			);
+			name = "Pods-APNGKit-macOS";
+			path = "Target Support Files/Pods-APNGKit-macOS";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3AEF7D761E8EA8419BB4A7000AB770CB /* Frameworks */,
+				6383EA6A758D8EDBAA43F657DBB0DC04 /* Pods */,
+				FD6C21547039B2E25309FC36D5F74156 /* Products */,
+				801169ADB154B931134D02CB7F0D6C8A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		801169ADB154B931134D02CB7F0D6C8A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D911638578896C2CD8783B4E70E6F3 /* Pods-APNGKit-iOS */,
+				7D73B3CA80CF1E2C14CCCAB309898342 /* Pods-APNGKit-macOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8C918DD0468B798DBE7EEDD4C9D4170B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DB8E2D632CADFEBE217900FD1D4F3ABF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A67FE0842A0DDA904DCA7095D5AD57D3 /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5575DFC6C32161C3A424C068E3837C6B /* GCDTimer.h */,
+				32A3D779B6EC0FD7E87CEA8FAD00F98B /* GCDTimer.m */,
+				129A64696900CC880CAAB19336EAA0D2 /* Support Files */,
+			);
+			path = GCDTimer;
+			sourceTree = "<group>";
+		};
+		F8D911638578896C2CD8783B4E70E6F3 /* Pods-APNGKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				72E4420D35DDCB3B900B0257AA52AF78 /* Info.plist */,
+				4CD95B18AE37C38014FBBC45F79D4D51 /* Pods-APNGKit-iOS.modulemap */,
+				8CF9AA35E57B49EA3FBB74029757571B /* Pods-APNGKit-iOS-acknowledgements.markdown */,
+				2C01E6BA005ACDBE32FFB870721B4C20 /* Pods-APNGKit-iOS-acknowledgements.plist */,
+				4310463A072E6432236FAED05A602648 /* Pods-APNGKit-iOS-dummy.m */,
+				A967C7DC9DCF6746546B194C2D59418B /* Pods-APNGKit-iOS-resources.sh */,
+				D704343D7C516539DB0A759A2E83C532 /* Pods-APNGKit-iOS-umbrella.h */,
+				8168431A9A52E365352A35B4D809E690 /* Pods-APNGKit-iOS.debug.xcconfig */,
+				B846E80028506DA3DFFEF3ACA424F048 /* Pods-APNGKit-iOS.release.xcconfig */,
+			);
+			name = "Pods-APNGKit-iOS";
+			path = "Target Support Files/Pods-APNGKit-iOS";
+			sourceTree = "<group>";
+		};
+		FD6C21547039B2E25309FC36D5F74156 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC56B043D4AC368B93D21935FCBD1542 /* GCDTimer.framework */,
+				73321509A8A22D3CC52280F5CE8028C6 /* Pods_APNGKit_iOS.framework */,
+				E0707CE97F11141902FBF266DCC824ED /* Pods_APNGKit_macOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C072030AB654BF30E58E08999FE0B0AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE8C3A6007154E47B46031C3B316C7B /* Pods-APNGKit-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2A3BC45AA8FC7DE6F969AE27E7B065A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DD22364719E4C65304DC239550A708 /* Pods-APNGKit-macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6907F968D1C5EE3019D22D25F7288CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740436ECC1FE7AB1E91AE4D628EB1306 /* GCDTimer-umbrella.h in Headers */,
+				3F3B48B9120CF48DA35FF616152B9A1B /* GCDTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		51C4349D7025220D0029CC2F92EACCE2 /* Pods-APNGKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74655F34B1BFA95E0FDF18FF416641CE /* Build configuration list for PBXNativeTarget "Pods-APNGKit-iOS" */;
+			buildPhases = (
+				79301EAC03EFA81AC541DB38CB1E9DD2 /* Sources */,
+				9C8946A55C7DC234D94E0A8DB5D8ADED /* Frameworks */,
+				C072030AB654BF30E58E08999FE0B0AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9102B88F8A2C2FCEC679A4A60ACF395 /* PBXTargetDependency */,
+			);
+			name = "Pods-APNGKit-iOS";
+			productName = "Pods-APNGKit-iOS";
+			productReference = 73321509A8A22D3CC52280F5CE8028C6 /* Pods_APNGKit_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7838345801F79D0183019A4A80C8F735 /* Pods-APNGKit-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B69E43EF649E7148638A6208B859C4E /* Build configuration list for PBXNativeTarget "Pods-APNGKit-macOS" */;
+			buildPhases = (
+				8A5E5B883CFEAC6DBDC816B489CF4396 /* Sources */,
+				740AD5D1E1929DB66F9BC8BC3AD741CE /* Frameworks */,
+				C2A3BC45AA8FC7DE6F969AE27E7B065A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-APNGKit-macOS";
+			productName = "Pods-APNGKit-macOS";
+			productReference = E0707CE97F11141902FBF266DCC824ED /* Pods_APNGKit_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C899FF806C0FB417360FE0E161170A87 /* GCDTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DE8044A8C0007DA445956FD568A7D5 /* Build configuration list for PBXNativeTarget "GCDTimer" */;
+			buildPhases = (
+				1B8CFB5EC3AD1B1272D1247D09B00C9C /* Sources */,
+				04551F0BA5924682CA44A25BAE1188C3 /* Frameworks */,
+				D6907F968D1C5EE3019D22D25F7288CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDTimer;
+			productName = GCDTimer;
+			productReference = FC56B043D4AC368B93D21935FCBD1542 /* GCDTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0920;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FD6C21547039B2E25309FC36D5F74156 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C899FF806C0FB417360FE0E161170A87 /* GCDTimer */,
+				51C4349D7025220D0029CC2F92EACCE2 /* Pods-APNGKit-iOS */,
+				7838345801F79D0183019A4A80C8F735 /* Pods-APNGKit-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B8CFB5EC3AD1B1272D1247D09B00C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19832C60DA1F918DF490B4DD7F7A18A4 /* GCDTimer-dummy.m in Sources */,
+				F53FD32F5D38BCBC869C7522EC7E60F7 /* GCDTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79301EAC03EFA81AC541DB38CB1E9DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458C302C722D12298C6B9492650E1C48 /* Pods-APNGKit-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A5E5B883CFEAC6DBDC816B489CF4396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD61B55620160EE9405DCC0C0AA4D7D /* Pods-APNGKit-macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9102B88F8A2C2FCEC679A4A60ACF395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDTimer;
+			target = C899FF806C0FB417360FE0E161170A87 /* GCDTimer */;
+			targetProxy = 7904572522A1C3A6CB061C44F5C1BAC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4D9AD4DB92F39FC938773D217905DC19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B846E80028506DA3DFFEF3ACA424F048 /* Pods-APNGKit-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APNGKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APNGKit-iOS/Pods-APNGKit-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APNGKit_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB5965931E2FEF61A7D4A8B15E01C838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B064587ED0409F26032F2175EE5A6C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8168431A9A52E365352A35B4D809E690 /* Pods-APNGKit-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APNGKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-APNGKit-iOS/Pods-APNGKit-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APNGKit_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC628B6166E6F59E4D975F9FCF80648C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CBDBA66319F8406FCAE875F5F45E075 /* Pods-APNGKit-macOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APNGKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-APNGKit-macOS/Pods-APNGKit-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APNGKit_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CACDD1BA526670FC6C3F2307E1745298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E60BCA06BC8C9FBB4645328726777783 /* GCDTimer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDTimer/GCDTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDTimer/GCDTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GCDTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9738ED99882C7AD607EC2A056439BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E60BCA06BC8C9FBB4645328726777783 /* GCDTimer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCDTimer/GCDTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDTimer/GCDTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GCDTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9B1F3FBD81BA88E3A7799E3C3E63DB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD216FB36CF4D6E2BDAFE94F3E4806D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFAE624B5CEE8C9FA9D1F3BCAFED383 /* Pods-APNGKit-macOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-APNGKit-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-APNGKit-macOS/Pods-APNGKit-macOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_APNGKit_macOS;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B69E43EF649E7148638A6208B859C4E /* Build configuration list for PBXNativeTarget "Pods-APNGKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC628B6166E6F59E4D975F9FCF80648C /* Debug */,
+				FD216FB36CF4D6E2BDAFE94F3E4806D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB5965931E2FEF61A7D4A8B15E01C838 /* Debug */,
+				F9B1F3FBD81BA88E3A7799E3C3E63DB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74655F34B1BFA95E0FDF18FF416641CE /* Build configuration list for PBXNativeTarget "Pods-APNGKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B064587ED0409F26032F2175EE5A6C44 /* Debug */,
+				4D9AD4DB92F39FC938773D217905DC19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DE8044A8C0007DA445956FD568A7D5 /* Build configuration list for PBXNativeTarget "GCDTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACDD1BA526670FC6C3F2307E1745298 /* Debug */,
+				F9738ED99882C7AD607EC2A056439BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
