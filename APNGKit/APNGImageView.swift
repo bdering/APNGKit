@@ -78,7 +78,7 @@ open class APNGImageView: APNGView {
     }
     
     /// A Bool value indicating whether the animation is running.
-    open fileprivate(set) var isAnimating: Bool
+    open var isAnimating: Bool
     
     /// A Bool value indicating whether the animation should be 
     /// started automatically after an image is set. Default is false.
@@ -106,14 +106,14 @@ open class APNGImageView: APNGView {
         }
     }
 
-    var timer: GCDTimer?
-    var lastTimestamp: TimeInterval = 0
-    var currentPassedDuration: TimeInterval = 0
-    var currentFrameDuration: TimeInterval = 0
+    open var timer: GCDTimer?
+    open var lastTimestamp: TimeInterval = 0
+    open var currentPassedDuration: TimeInterval = 0
+    open var currentFrameDuration: TimeInterval = 0
     
-    var currentFrameIndex: Int = 0
+    open var currentFrameIndex: Int = 0
     
-    var repeated: Int = 0
+    open var repeated: Int = 0
     
     /**
     Initialize an APNG image view with the specified image.
