@@ -49,8 +49,6 @@
 		4B7D4ED71B9559BF005C0598 /* filter_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = 4B7D4ED51B9559BF005C0598 /* filter_neon.S */; };
 		4B7D4ED91B955CBF005C0598 /* arm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B7D4ED81B955CBF005C0598 /* arm_init.c */; };
 		4BF022041B94442800F00CDE /* APNGImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF022031B94442800F00CDE /* APNGImageViewTests.swift */; };
-		7E5A1EC94865E97ECBF371C0 /* Pods_APNGKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9501B1AE4C20678A241DCD /* Pods_APNGKit_iOS.framework */; };
-		88CF3624155C5DE80C6A08D7 /* Pods_APNGKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC9FB74C0FE978E0DE571BC /* Pods_APNGKit_macOS.framework */; };
 		B25269641E8FD9840096A0A7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B25269631E8FD9840096A0A7 /* libz.tbd */; };
 		B25269661E8FDA090096A0A7 /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B19504F1E6D21670047B7DE /* GCDTimer.swift */; };
 		B25269671E8FDA0E0096A0A7 /* APNGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17398451B90A9B200913AEA /* APNGImageView.swift */; };
@@ -143,9 +141,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A146CE0CE36EDFF19432551 /* Pods-APNGKit-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNGKit-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNGKit-macOS/Pods-APNGKit-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		114DEC7B44FA86D22D876B60 /* Pods-APNGKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNGKit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNGKit-iOS/Pods-APNGKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2030FEC36AFC955F00C25CE3 /* Pods-APNGKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNGKit-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNGKit-iOS/Pods-APNGKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		4B0D67391B8E9DBF00876BDF /* APNGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0D673C1B8E9DBF00876BDF /* APNGKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APNGKit.h; sourceTree = "<group>"; };
 		4B0D673E1B8E9DBF00876BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,7 +186,6 @@
 		4B7D4ED51B9559BF005C0598 /* filter_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = filter_neon.S; sourceTree = "<group>"; };
 		4B7D4ED81B955CBF005C0598 /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arm_init.c; sourceTree = "<group>"; };
 		4BF022031B94442800F00CDE /* APNGImageViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNGImageViewTests.swift; sourceTree = "<group>"; };
-		7A9501B1AE4C20678A241DCD /* Pods_APNGKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNGKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B252695A1E8FD8EA0096A0A7 /* APNGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25269631E8FD9840096A0A7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		B25310061E90A99400A65CEA /* APNGKitTests OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APNGKitTests OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,8 +206,6 @@
 		D19019A11B9336B100E16EDB /* APNGImageCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNGImageCacheTests.swift; sourceTree = "<group>"; };
 		D199B20B1B91445100BF8358 /* APNGKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNGKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D199B2161B91445100BF8358 /* APNGKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNGKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECC9FB74C0FE978E0DE571BC /* Pods_APNGKit_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNGKit_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0A35C090A83F8600306BD3D /* Pods-APNGKit-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNGKit-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNGKit-macOS/Pods-APNGKit-macOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D122B9261B96CC8E00CB4F26 /* libz.tbd in Frameworks */,
-				7E5A1EC94865E97ECBF371C0 /* Pods_APNGKit_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B25269641E8FD9840096A0A7 /* libz.tbd in Frameworks */,
-				88CF3624155C5DE80C6A08D7 /* Pods_APNGKit_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +264,6 @@
 				4B0D673B1B8E9DBF00876BDF /* APNGKit */,
 				4B0D67471B8E9DC000876BDF /* APNGKitTests */,
 				4B0D673A1B8E9DBF00876BDF /* Products */,
-				D2F63EAE5343DF62DF83D2C4 /* Pods */,
-				6737C9C60A86F80DCB8B4747 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -380,15 +368,6 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		6737C9C60A86F80DCB8B4747 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7A9501B1AE4C20678A241DCD /* Pods_APNGKit_iOS.framework */,
-				ECC9FB74C0FE978E0DE571BC /* Pods_APNGKit_macOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D1614E1C1B91EDD700050104 /* TestImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,17 +383,6 @@
 				D1614E211B91EDE200050104 /* spinfox.apng */,
 			);
 			name = TestImages;
-			sourceTree = "<group>";
-		};
-		D2F63EAE5343DF62DF83D2C4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				114DEC7B44FA86D22D876B60 /* Pods-APNGKit-iOS.debug.xcconfig */,
-				2030FEC36AFC955F00C25CE3 /* Pods-APNGKit-iOS.release.xcconfig */,
-				0A146CE0CE36EDFF19432551 /* Pods-APNGKit-macOS.debug.xcconfig */,
-				F0A35C090A83F8600306BD3D /* Pods-APNGKit-macOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,13 +425,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B0D674D1B8E9DC000876BDF /* Build configuration list for PBXNativeTarget "APNGKit-iOS" */;
 			buildPhases = (
-				AB18247F131B84AE4B159D24 /* [CP] Check Pods Manifest.lock */,
 				4B6B68DE1B8EA5FB00C4868A /* Copy libpng-apng files */,
 				4B0D67341B8E9DBF00876BDF /* Sources */,
 				4B0D67351B8E9DBF00876BDF /* Frameworks */,
 				4B0D67361B8E9DBF00876BDF /* Headers */,
 				4B0D67371B8E9DBF00876BDF /* Resources */,
-				11B3CDBC0CF0005E14E28AC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -496,13 +462,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B252695F1E8FD8EA0096A0A7 /* Build configuration list for PBXNativeTarget "APNGKit-macOS" */;
 			buildPhases = (
-				3C10790AEDF026B15A8956A6 /* [CP] Check Pods Manifest.lock */,
 				4B30431C1E91E37100780096 /* Copy libpng-apng files */,
 				B25269551E8FD8EA0096A0A7 /* Sources */,
 				B25269561E8FD8EA0096A0A7 /* Frameworks */,
 				B25269571E8FD8EA0096A0A7 /* Headers */,
 				B25269581E8FD8EA0096A0A7 /* Resources */,
-				7D9A284A19120829ADDBC1FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -695,36 +659,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11B3CDBC0CF0005E14E28AC0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNGKit-iOS/Pods-APNGKit-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C10790AEDF026B15A8956A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		4B30431C1E91E37100780096 /* Copy libpng-apng files */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -752,36 +686,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "ruby ./sync-libpng-apng";
-		};
-		7D9A284A19120829ADDBC1FA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNGKit-macOS/Pods-APNGKit-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB18247F131B84AE4B159D24 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1028,7 +932,6 @@
 		};
 		4B0D674E1B8E9DC000876BDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DEC7B44FA86D22D876B60 /* Pods-APNGKit-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1051,7 +954,6 @@
 		};
 		4B0D674F1B8E9DC000876BDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2030FEC36AFC955F00C25CE3 /* Pods-APNGKit-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1103,7 +1005,6 @@
 		};
 		B25269601E8FD8EA0096A0A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A146CE0CE36EDFF19432551 /* Pods-APNGKit-macOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1135,7 +1036,6 @@
 		};
 		B25269611E8FD8EA0096A0A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0A35C090A83F8600306BD3D /* Pods-APNGKit-macOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

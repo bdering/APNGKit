@@ -35,26 +35,24 @@
     public typealias CocoaRect = CGRect
     public typealias CocoaImage = UIImage
 #endif
-
+    
 @objc public protocol APNGImageViewDelegate {
     @objc optional func apngImageView(_ imageView: APNGImageView, didFinishPlaybackForRepeatedCount count: Int)
 }
 
-import GCDTimer
-
 /// An APNG image view object provides a view-based container for displaying an APNG image.
 /// You can control the starting and stopping of the animation, as well as the repeat count.
-/// All images associated with an APNGImageView object should use the same scale.
+/// All images associated with an APNGImageView object should use the same scale. 
 /// If your application uses images with different scales, they may render incorrectly.
 open class APNGImageView: APNGView {
     
     /// The image displayed in the image view.
-    /// If you change the image when the animation playing,
+    /// If you change the image when the animation playing, 
     /// the animation of original image will stop, and the new one will start automatically.
     open var image: APNGImage? { // Setter should be run on main thread
         didSet {
             invalidateIntrinsicContentSize()
-            
+
             let animating = isAnimating
             stopAnimating()
             
@@ -64,7 +62,7 @@ open class APNGImageView: APNGView {
             }
             
             image.reset()
-            
+
             let frame = image.next(currentIndex: currentFrameIndex)
             currentFrameDuration = frame.duration
             updateContents(frame.image)
@@ -80,11 +78,9 @@ open class APNGImageView: APNGView {
     }
     
     /// A Bool value indicating whether the animation is running.
-    open var isAnimating: Bool
+    open fileprivate(set) var isAnimating: Bool
     
-    open var isPaused: Bool
-    
-    /// A Bool value indicating whether the animation should be
+    /// A Bool value indicating whether the animation should be 
     /// started automatically after an image is set. Default is false.
     open var autoStartAnimation: Bool {
         didSet {
@@ -109,34 +105,32 @@ open class APNGImageView: APNGView {
             return CGSize.zero
         }
     }
+
+    var timer: GCDTimer?
+    var lastTimestamp: TimeInterval = 0
+    var currentPassedDuration: TimeInterval = 0
+    var currentFrameDuration: TimeInterval = 0
     
-    open var usualTimer: Timer?
-    open var timer: GCDTimer?
-    open var lastTimestamp: TimeInterval = 0
-    open var currentPassedDuration: TimeInterval = 0
-    open var currentFrameDuration: TimeInterval = 0
+    var currentFrameIndex: Int = 0
     
-    open var currentFrameIndex: Int = 0
-    
-    open var repeated: Int = 0
+    var repeated: Int = 0
     
     /**
-     Initialize an APNG image view with the specified image.
-     
-     - note: This method adjusts the frame of the receiver to match the
-     size of the specified image. It also disables user interactions
-     for the image view by default.
-     The first frame of image (default image) will be displayed.
-     
-     - parameter image: The initial APNG image to display in the image view.
-     
-     - returns: An initialized image view object.
-     */
+    Initialize an APNG image view with the specified image.
+    
+    - note: This method adjusts the frame of the receiver to match the 
+            size of the specified image. It also disables user interactions 
+            for the image view by default.
+            The first frame of image (default image) will be displayed.
+    
+    - parameter image: The initial APNG image to display in the image view.
+    
+    - returns: An initialized image view object.
+    */
     public init(image: APNGImage?) {
         self.image = image
         isAnimating = false
         autoStartAnimation = false
-        isPaused = false
         
         if let image = image {
             super.init(frame: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
@@ -165,20 +159,19 @@ open class APNGImageView: APNGView {
             wantsLayer = false
         #endif
     }
-    
+
     /**
-     Initialize an APNG image view with a decoder.
-     
-     - note: You should never call this init method from your code.
-     
-     - parameter aDecoder: A decoder used to decode the view from nib.
-     
-     - returns: An initialized image view object.
-     */
+    Initialize an APNG image view with a decoder.
+    
+    - note: You should never call this init method from your code.
+    
+    - parameter aDecoder: A decoder used to decode the view from nib.
+    
+    - returns: An initialized image view object.
+    */
     required public init?(coder aDecoder: NSCoder) {
         isAnimating = false
         autoStartAnimation = false
-        isPaused = false
         super.init(coder: aDecoder)
     }
     
@@ -192,13 +185,12 @@ open class APNGImageView: APNGView {
     public override init(frame: CocoaRect) {
         isAnimating = false
         autoStartAnimation = false
-        isPaused = false
         super.init(frame: frame)
     }
     
     /**
-     Starts animation contained in the image.
-     */
+    Starts animation contained in the image.
+    */
     @objc open func startAnimating() {
         let mainRunLoop = RunLoop.main
         let currentRunLoop = RunLoop.current
@@ -213,14 +205,16 @@ open class APNGImageView: APNGView {
         }
         
         isAnimating = true
-        timer = GCDTimer(scheduledTimerWithTimeInterval: 0.016, repeats: true, block: { [weak self] in
+        timer = GCDTimer(intervalInSecs: 0.016)
+        timer!.Event = { [weak self] in
             DispatchQueue.main.sync { self?.tick() }
-        })
+        }
+        timer!.start()
     }
     
     /**
-     Starts animation contained in the image.
-     */
+    Starts animation contained in the image.
+    */
     @objc open func stopAnimating() {
         let mainRunLoop = RunLoop.main
         let currentRunLoop = RunLoop.current
@@ -240,44 +234,7 @@ open class APNGImageView: APNGView {
         currentPassedDuration = 0
         currentFrameIndex = 0
         
-        timer?.invalidate()
         timer = nil
-    }
-    
-    @objc open func pauseAnimation() {
-        let mainRunLoop = RunLoop.main
-        let currentRunLoop = RunLoop.current
-        
-        if mainRunLoop != currentRunLoop {
-            performSelector(onMainThread: #selector(APNGImageView.pauseAnimation), with: nil, waitUntilDone: false)
-            return
-        }
-        
-        if self.isAnimating && self.timer != nil {
-            self.isAnimating = false
-            self.isPaused = true
-            self.timer?.invalidate()
-        }
-    }
-    
-    @objc open func resumeAnimation() {
-        let mainRunLoop = RunLoop.main
-        let currentRunLoop = RunLoop.current
-        
-        debugPrint("stuff \(mainRunLoop != currentRunLoop)")
-        
-        if mainRunLoop != currentRunLoop {
-            performSelector(onMainThread: #selector(APNGImageView.resumeAnimation), with: nil, waitUntilDone: false)
-            return
-        }
-        
-        if !self.isAnimating && self.timer != nil {
-            self.isAnimating = true
-            self.isPaused = false
-            timer = GCDTimer(scheduledTimerWithTimeInterval: 0.016, repeats: true, block: { [weak self] in
-                DispatchQueue.main.sync { self?.tick() }
-            })
-        }
     }
     
     func tick() {
