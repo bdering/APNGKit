@@ -286,10 +286,9 @@ open class APNGImageView: APNGView {
             currentFrameDuration = frame.duration
             updateContents(frame.image)
         }
-        
     }
     
-    func updateContents(_ image: CocoaImage?) {
+    open func updateContents(_ image: CocoaImage?) {
         
         let currentImage: CGImage?
         

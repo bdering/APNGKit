@@ -58,8 +58,8 @@ open class APNGImage: NSObject { // For ObjC compatibility
     /// Set this to `RepeatForever` will make the animation loops forever.
     open var repeatCount: Int
     
-    let firstFrameHidden: Bool
-    let bitDepth: Int
+    open let firstFrameHidden: Bool
+    open let bitDepth: Int
     
     /// The count of frames in this APNG image.
     /// The value of it for a single plain PNG file would be 1.
@@ -68,10 +68,10 @@ open class APNGImage: NSObject { // For ObjC compatibility
     public var frames: [Frame]?
     
     // Keep a frame strong reference so it will not get released when using Disassembler
-    var currentFrame: Frame?
+    public var currentFrame: Frame?
     fileprivate(set) var disassembler: Disassembler?
     
-    func reset() {
+    open func reset() {
         if let disassembler = disassembler {
             disassembler.clean()
         }
@@ -79,7 +79,7 @@ open class APNGImage: NSObject { // For ObjC compatibility
     
     // The index is only for fully loaded images.
     // Progressive loading will just ignore that.
-    func next(currentIndex: Int) -> Frame {
+    open func next(currentIndex: Int) -> Frame {
 
         if let frames = frames {
             precondition(currentIndex < frames.count, "Trying to access index out of bound.")
@@ -107,7 +107,7 @@ open class APNGImage: NSObject { // For ObjC compatibility
     fileprivate let dataOwner: APNGImage?
     fileprivate let internalSize: CGSize // size in pixel
 
-    init(scale: CGFloat, meta: APNGMeta) {
+    public init(scale: CGFloat, meta: APNGMeta) {
         let size = CGSize(width: Int(meta.width), height: Int(meta.height))
         self.internalSize = size
         self.scale = scale
@@ -123,20 +123,20 @@ open class APNGImage: NSObject { // For ObjC compatibility
     }
     
     // Init from a frame array. This happens when all frame data get decoded.
-    convenience init(frames: [Frame], scale: CGFloat, meta: APNGMeta) {
+    public convenience init(frames: [Frame], scale: CGFloat, meta: APNGMeta) {
         self.init(scale: scale, meta: meta)
         self.frames = frames
         self.disassembler = nil
     }
     
     // Init from a disaabler. This happens when loading progressivly.
-    convenience init(disassembler: Disassembler, scale: CGFloat, meta: APNGMeta) {
+    public convenience init(disassembler: Disassembler, scale: CGFloat, meta: APNGMeta) {
         self.init(scale: scale, meta: meta)
         self.disassembler = disassembler
         self.frames = nil
     }
     
-    init(apng: APNGImage) {
+    public init(apng: APNGImage) {
         // The image init from this method will share the same data trunk with the other apng obj
         if apng.frames != nil {
             dataOwner = apng

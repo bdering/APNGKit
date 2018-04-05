@@ -34,7 +34,7 @@ let signatureOfPNGLength = 8
 let kMaxPNGSize: UInt32 = 1000000;
 
 // Reading callback for libpng
-func readData(_ pngPointer: png_structp?, outBytes: png_bytep?, byteCountToRead: png_size_t) {
+public func readData(_ pngPointer: png_structp?, outBytes: png_bytep?, byteCountToRead: png_size_t) {
     if pngPointer == nil || outBytes == nil {
         return
     }
@@ -45,7 +45,7 @@ func readData(_ pngPointer: png_structp?, outBytes: png_bytep?, byteCountToRead:
     _ = reader.read(outBytes!, bytesCount: byteCountToRead)
 }
 
-struct APNGMeta {
+public struct APNGMeta {
     let width: UInt32
     let height: UInt32
     let bitDepth: UInt32
@@ -88,9 +88,9 @@ public enum DisassemblerError: Error {
 *  This Disassembler is using a patched libpng with supporting of apng to read APNG data.
 *  See https://github.com/onevcat/libpng for more.
 */
-class Disassembler {
+public class Disassembler {
     fileprivate(set) var reader: Reader
-    let originalData: Data
+    public let originalData: Data
     
     fileprivate var processing = false
     fileprivate var pngPointer: png_structp?
@@ -119,7 +119,7 @@ class Disassembler {
     
     
 
-    func readRegularPNGFrame() -> Frame? {
+    public func readRegularPNGFrame() -> Frame? {
         guard let apngMeta = apngMeta else { return nil }
         guard currentFrameIndex == 0 else { return nil }
         
@@ -144,7 +144,7 @@ class Disassembler {
         return currentFrame
     }
 
-    func readNextFrame() -> Frame? {
+    public func readNextFrame() -> Frame? {
         
         guard let apngMeta = apngMeta else { return nil }
         guard currentFrameIndex < Int(apngMeta.frameCount) else {
@@ -230,7 +230,7 @@ class Disassembler {
         return currentFrame
     }
     
-    func prepare() throws {
+    public func prepare() throws {
         reader.beginReading()
         try checkFormat()
         
@@ -314,7 +314,7 @@ class Disassembler {
         apngMeta = meta
     }
     
-    func clean() {
+    public func clean() {
         
         // Do not clean apng meta here. We will need it to return some meta to outside.
         
@@ -355,7 +355,7 @@ class Disassembler {
         return apng
     }
     
-    func decodeToElements(_ scale: CGFloat = 1) throws
+    public func decodeToElements(_ scale: CGFloat = 1) throws
             -> (frames: [Frame], APNGMeta)
     {
         var frames = [Frame]()
@@ -368,7 +368,7 @@ class Disassembler {
         return (frames, apngMeta)
     }
     
-    func decodeMeta() throws -> APNGMeta {
+    public func decodeMeta() throws -> APNGMeta {
         try prepare()
         clean()
         
@@ -378,7 +378,7 @@ class Disassembler {
         return apngMeta
     }
     
-    func blendFrameDstBytes(_ dstBytes: Array<UnsafeMutablePointer<UInt8>>,
+    public func blendFrameDstBytes(_ dstBytes: Array<UnsafeMutablePointer<UInt8>>,
                             srcBytes: Array<UnsafeMutablePointer<UInt8>>,
                              blendOP: UInt8,
                              offsetX: UInt32,
@@ -424,7 +424,7 @@ class Disassembler {
         }
     }
     
-    func checkFormat() throws {
+    public func checkFormat() throws {
         guard originalData.count > 8 else {
             throw DisassemblerError.invalidFormat
         }
@@ -439,7 +439,7 @@ class Disassembler {
 }
 
 extension Disassembler: IteratorProtocol {
-    func next() -> Frame? {
+    public func next() -> Frame? {
         if !processing {
             processing = true
             do {
