@@ -67,10 +67,10 @@ open class Frame {
     }
     
     /// Data chunk.
-    var bytes: UnsafeMutablePointer<UInt8>
+    open var bytes: UnsafeMutablePointer<UInt8>
     
     /// An array of raw data row pointer. A decoder should fill this area with image raw data.
-    lazy var byteRows: Array<UnsafeMutableRawPointer> = {
+    open lazy var byteRows: Array<UnsafeMutableRawPointer> = {
         var array = Array<UnsafeMutableRawPointer>()
         
         let height = self.length / self.bytesInRow
@@ -81,12 +81,12 @@ open class Frame {
         return array
     }()
     
-    let length: Int
+    open let length: Int
     
     /// How many bytes in a row. Regularly it is width * (bitDepth / 2)
-    let bytesInRow: Int
+    open let bytesInRow: Int
     
-    var duration: TimeInterval = 0
+    open var duration: TimeInterval = 0
     
     init(length: UInt32, bytesInRow: UInt32) {
         self.length = Int(length)
@@ -97,13 +97,13 @@ open class Frame {
         memset(self.bytes, 0, self.length)
     }
     
-    func clean() {
+    public func clean() {
         cleaned = true
         bytes.deinitialize(count: length)
         bytes.deallocate(capacity: length)
     }
     
-    func updateCGImageRef(_ width: Int, height: Int, bits: Int, scale: CGFloat, blend: Bool) {
+    public func updateCGImageRef(_ width: Int, height: Int, bits: Int, scale: CGFloat, blend: Bool) {
         self.width = width
         self.height = height
         self.bits = bits
@@ -120,7 +120,7 @@ extension Frame: CustomStringConvertible {
 
 extension Frame: CustomDebugStringConvertible {
 
-    var data: Data? {
+    open var data: Data? {
         if let image = image {
             #if os(iOS) || os(watchOS) || os(tvOS)
                 return UIImagePNGRepresentation(image)
