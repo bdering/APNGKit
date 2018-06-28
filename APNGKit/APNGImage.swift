@@ -71,6 +71,9 @@ open class APNGImage: NSObject { // For ObjC compatibility
     public var currentFrame: Frame?
     fileprivate(set) var disassembler: Disassembler?
     
+    open var path: String?
+    open var isProgressive: Bool = false
+    
     open func reset() {
         if let disassembler = disassembler {
             disassembler.clean()
@@ -234,6 +237,9 @@ open class APNGImage: NSObject { // For ObjC compatibility
                 if saveToCache && !progressive {
                     APNGCache.defaultCache.setImage(self, forKey: path)
                 }
+                
+                self.path = path
+                self.isProgressive = progressive
             } else {
                 return nil
             }
@@ -303,7 +309,7 @@ open class APNGImage: NSObject { // For ObjC compatibility
 extension APNGImage {
     override open var description: String {
         guard let frames = frames else {
-            return ""
+            return "Frames are not loaded."
         }
         var s = "<APNGImage: \(Unmanaged.passUnretained(self).toOpaque())> size: \(size), frameCount: \(frames.count), repeatCount: \(repeatCount)\n"
         s += "["
